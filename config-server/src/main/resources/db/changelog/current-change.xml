@@ -1,0 +1,328 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+   http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+
+    <changeSet author="codenfast (generated)" id="1666919062066-1">
+        <createTable tableName="media_genre">
+            <column computed="false" name="mediagenre_id" type="varchar(36)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK__media_ge__423DA95FF479DE22"/>
+            </column>
+            <column computed="false" name="create_time" type="datetime"/>
+            <column computed="false" name="passive" type="varchar(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="update_time" type="datetime"/>
+            <column computed="false" name="genre_id" type="varchar(36)"/>
+            <column computed="false" name="media_id" type="varchar(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-2">
+        <createTable tableName="invoice_licence">
+            <column computed="false" name="invoicelicence_id" type="varchar(36)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK__invoice___7A622D9D8BDF7EDA"/>
+            </column>
+            <column computed="false" name="attribution_link" type="varchar(255)"/>
+            <column computed="false" name="attribution_source_link" type="varchar(255)"/>
+            <column computed="false" name="attribution" type="varchar(MAX)"/>
+            <column computed="false" name="create_time" type="datetime"/>
+            <column computed="false" name="description" type="varchar(255)"/>
+            <column computed="false" name="downloaded_url" type="varchar(255)"/>
+            <column computed="false" name="file_location" type="varchar(255)"/>
+            <column computed="false" name="file_name" type="varchar(255)"/>
+            <column computed="false" name="height" type="int"/>
+            <column computed="false" name="issuer" type="varchar(255)"/>
+            <column computed="false" name="mime_type" type="varchar(255)"/>
+            <column computed="false" name="name" type="varchar(255)"/>
+            <column computed="false" name="partial_download_support" type="varchar(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="passive" type="varchar(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="size" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="update_time" type="datetime"/>
+            <column computed="false" name="width" type="int"/>
+            <column computed="false" name="zip_mime_type" type="varchar(255)"/>
+            <column computed="false" name="downloadintent_id" type="varchar(36)"/>
+            <column computed="false" name="media_id" type="varchar(36)"/>
+            <column computed="false" name="downloadstatus_id" type="varchar(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-3">
+        <createTable tableName="download_part">
+            <column computed="false" name="downloadpart_id" type="varchar(36)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK__download__E75AFECC08A85D4F"/>
+            </column>
+            <column computed="false" name="byte_range_end" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="byte_range_start" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="create_time" type="datetime"/>
+            <column computed="false" name="part_file_name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="part_number" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="passive" type="varchar(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="update_time" type="datetime"/>
+            <column computed="false" name="media_id" type="varchar(36)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="downloadstatus_id" type="varchar(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-4">
+        <createTable tableName="media">
+            <column computed="false" name="media_id" type="varchar(36)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK__media__D0A840F478990666"/>
+            </column>
+            <column computed="false" name="artist" type="varchar(255)"/>
+            <column computed="false" name="attribution_link" type="varchar(255)"/>
+            <column computed="false" name="attribution_source_link" type="varchar(255)"/>
+            <column computed="false" name="attribution" type="varchar(MAX)"/>
+            <column computed="false" name="create_time" type="datetime"/>
+            <column computed="false" name="description" type="varchar(255)"/>
+            <column computed="false" name="downloaded_url" type="varchar(255)"/>
+            <column computed="false" name="file_location" type="varchar(255)"/>
+            <column computed="false" name="file_name" type="varchar(255)"/>
+            <column computed="false" name="height" type="int"/>
+            <column computed="false" name="is_public" type="varchar(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="mime_type" type="varchar(255)"/>
+            <column computed="false" name="name" type="varchar(255)"/>
+            <column computed="false" name="partial_download_support" type="varchar(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="passive" type="varchar(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="size" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="update_time" type="datetime"/>
+            <column computed="false" name="width" type="int"/>
+            <column computed="false" name="zip_mime_type" type="varchar(255)"/>
+            <column computed="false" name="downloadintent_id" type="varchar(36)"/>
+            <column computed="false" name="mediadownloadsource_id" type="varchar(36)"/>
+            <column computed="false" name="media_image_media_id" type="varchar(36)"/>
+            <column computed="false" name="downloadstatus_id" type="varchar(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-5">
+        <createTable tableName="media_download_source">
+            <column computed="false" name="mediadownloadsource_id" type="varchar(36)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK__media_do__409C09305C3A4238"/>
+            </column>
+            <column computed="false" name="create_time" type="datetime"/>
+            <column computed="false" name="description" type="varchar(255)"/>
+            <column computed="false" name="name" type="varchar(255)"/>
+            <column computed="false" name="passive" type="varchar(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="site_name" type="varchar(255)"/>
+            <column computed="false" name="title" type="varchar(255)"/>
+            <column computed="false" name="type" type="varchar(255)"/>
+            <column computed="false" name="update_time" type="datetime"/>
+            <column computed="false" name="url" type="varchar(255)"/>
+            <column computed="false" name="image_media_id" type="varchar(36)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-6">
+        <createTable tableName="download_intent">
+            <column computed="false" name="downloadintent_id" type="varchar(36)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK__download__5B0E2E66D00E5368"/>
+            </column>
+            <column computed="false" name="create_time" type="datetime"/>
+            <column computed="false" name="name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="passive" type="varchar(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="update_time" type="datetime"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-7">
+        <createTable tableName="download_status">
+            <column computed="false" name="downloadstatus_id" type="varchar(36)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK__download__D548C0494414A318"/>
+            </column>
+            <column computed="false" name="create_time" type="datetime"/>
+            <column computed="false" name="name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="passive" type="varchar(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="update_time" type="datetime"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-8">
+        <createTable tableName="genre">
+            <column computed="false" name="genre_id" type="varchar(36)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK__genre__18428D42BDCE69F0"/>
+            </column>
+            <column computed="false" name="create_time" type="datetime"/>
+            <column computed="false" name="name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="passive" type="varchar(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="update_time" type="datetime"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-9">
+        <createTable tableName="media_folder">
+            <column computed="false" name="media_id" type="varchar(36)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK__media_fo__D0A840F414114A48"/>
+            </column>
+            <column computed="false" name="create_time" type="datetime"/>
+            <column computed="false" name="description" type="varchar(255)"/>
+            <column computed="false" name="name" type="varchar(255)"/>
+            <column computed="false" name="passive" type="varchar(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="update_time" type="datetime"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-10">
+        <createTable tableName="users">
+            <column computed="false" name="user_id" type="varchar(36)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK__users__B9BE370FDCA4B9CE"/>
+            </column>
+            <column computed="false" name="bio" type="varchar(MAX)"/>
+            <column computed="false" name="birthdate" type="date"/>
+            <column computed="false" name="create_time" type="datetime"/>
+            <column computed="false" name="email" type="varchar(255)"/>
+            <column computed="false" name="email_validate_code" type="varchar(255)"/>
+            <column computed="false" name="email_validated" type="bit"/>
+            <column computed="false" name="language" type="varchar(255)"/>
+            <column computed="false" name="last_token_time" type="datetime"/>
+            <column computed="false" name="name" type="varchar(255)"/>
+            <column computed="false" name="passive" type="varchar(1)">
+                <constraints nullable="false"/>
+            </column>
+            <column computed="false" name="password" type="varchar(255)"/>
+            <column computed="false" name="renew_password" type="varchar(255)"/>
+            <column computed="false" name="renew_password_confirm_code" type="varchar(255)"/>
+            <column computed="false" name="surname" type="varchar(255)"/>
+            <column computed="false" name="update_time" type="datetime"/>
+            <column computed="false" name="username" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-11">
+        <createIndex indexName="ix_mediagenre_media" tableName="media_genre">
+            <column name="media_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-12">
+        <createIndex indexName="ix_media_downloadedurl" tableName="invoice_licence">
+            <column name="downloaded_url"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-13">
+        <createIndex indexName="ix_invoicelicence_downloadedurl" tableName="media">
+            <column name="downloaded_url"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-14">
+        <createIndex indexName="ix_invoicelicence_name" tableName="invoice_licence">
+            <column name="name"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-15">
+        <createIndex indexName="ix_media_name" tableName="media">
+            <column name="name"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-16">
+        <createIndex indexName="ix_downloadpart_media" tableName="download_part">
+            <column name="media_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-17">
+        <addForeignKeyConstraint baseColumnNames="image_media_id" baseTableName="media_download_source" constraintName="FKitswcdlcbdv771jyjsvll1ukr" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="media_id" referencedTableName="media" />
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-18">
+        <createIndex indexName="ix_mediadownloadsource_name" tableName="media_download_source">
+            <column name="name"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-19">
+        <createIndex indexName="ix_mediadownloadsource_title" tableName="media_download_source">
+            <column name="title"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-20">
+        <createIndex indexName="ix_mediadownloadsource_url" tableName="media_download_source">
+            <column name="url"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-21">
+        <addUniqueConstraint columnNames="name" constraintName="UK_gigw475pdah90in9fkdc5ujm7" tableName="download_intent"/>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-22">
+        <addUniqueConstraint columnNames="name" constraintName="UK_8lb7o3pcr9o3ftoe1dluf5ear" tableName="download_status"/>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-23">
+        <addUniqueConstraint columnNames="name" constraintName="UK_ctffrbu4484ft8dlsa5vmqdka" tableName="genre"/>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-24">
+        <createIndex indexName="ix_mediafolder_name" tableName="media_folder">
+            <column name="name"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-25">
+        <createIndex indexName="ix_user_username" tableName="users">
+            <column name="username"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-26">
+        <addForeignKeyConstraint baseColumnNames="media_id" baseTableName="media_genre" constraintName="FK11id0d8sjuuuiqrqr5fdpy6ew" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="media_id" referencedTableName="media" />
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-27">
+        <addForeignKeyConstraint baseColumnNames="genre_id" baseTableName="media_genre" constraintName="FKirfj5hv2pj04g41papd0lwe69" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="genre_id" referencedTableName="genre" />
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-28">
+        <addForeignKeyConstraint baseColumnNames="media_id" baseTableName="invoice_licence" constraintName="FK17arynmqi3hc0hjfyd0rksij2" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="media_id" referencedTableName="media" />
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-29">
+        <addForeignKeyConstraint baseColumnNames="downloadstatus_id" baseTableName="invoice_licence" constraintName="FK4fya6doqh5515135vkiyy5a9l" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="downloadstatus_id" referencedTableName="download_status" />
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-30">
+        <addForeignKeyConstraint baseColumnNames="downloadintent_id" baseTableName="invoice_licence" constraintName="FK80g5bcroo82uyrbschvaf577v" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="downloadintent_id" referencedTableName="download_intent" />
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-31">
+        <addForeignKeyConstraint baseColumnNames="downloadstatus_id" baseTableName="download_part" constraintName="FK56rxykiufkpgpr6fppn97nfa9" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="downloadstatus_id" referencedTableName="download_status" />
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-32">
+        <addForeignKeyConstraint baseColumnNames="media_id" baseTableName="download_part" constraintName="FK8rjnq21911kw5ivbss3xh9olx" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="media_id" referencedTableName="media" />
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-33">
+        <addForeignKeyConstraint baseColumnNames="media_image_media_id" baseTableName="media" constraintName="FK63bwmgrlff8wcpxx5eotut8rj" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="media_id" referencedTableName="media" />
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-34">
+        <addForeignKeyConstraint baseColumnNames="mediadownloadsource_id" baseTableName="media" constraintName="FK6rmh316nwwvd8nekar01eyviw" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="mediadownloadsource_id" referencedTableName="media_download_source" />
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-35">
+        <addForeignKeyConstraint baseColumnNames="downloadstatus_id" baseTableName="media" constraintName="FKca7qwh0olwguqls149yiuaus6" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="downloadstatus_id" referencedTableName="download_status" />
+    </changeSet>
+    <changeSet author="codenfast (generated)" id="1666919062066-36">
+        <addForeignKeyConstraint baseColumnNames="downloadintent_id" baseTableName="media" constraintName="FKt8f48tj9kiadcalhdiex0nxty" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="downloadintent_id" referencedTableName="download_intent" />
+    </changeSet>
+</databaseChangeLog>
