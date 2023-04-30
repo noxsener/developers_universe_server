@@ -12,7 +12,7 @@
 <br id="readme-top" />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://flykobi.codenfast.com/assets/ikonlar/logo.webp" alt="Logo" width="144" height="144">
+    <img src="https://app.codenfast.com:8443/api/rest/server-files/system/image/codenfast.com/012021/DevelopersUniverse-logo.png" alt="Logo" width="144" height="144">
   </a>
 
   <h3 align="center">Codenfast / Developers Universe</h3>
