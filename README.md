@@ -161,9 +161,9 @@ Don't forget to give the project a star! Thanks again!
 
 ## License
 
-Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0). See `LICENSE.txt` for more information.
+Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0). See <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode"> licence description for more information. </a>
 <br>
-**If you don't want to read long text; it's simply [telling you what you can do or not, at here](https://creativecommons.org/licenses/by-nc-nd/4.0/)**
+If you don't want to read long text; it's simply [telling you what you can do or not, at here](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
