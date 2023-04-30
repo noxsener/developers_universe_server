@@ -11,14 +11,14 @@
 <!-- PROJECT LOGO -->
 <br id="readme-top" />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://codenfast.com">
     <img src="https://app.codenfast.com:8443/api/rest/server-files/system/image/codenfast.com/012021/DevelopersUniverse-logo.png" alt="Logo" width="144" height="144">
   </a>
 
   <h3 align="center">Codenfast / Developers Universe</h3>
 
   <p align="center">
-    This project is Developers Universe App's Client written in Flutter
+    This project is Developers Universe App's Server written in Java
     <br />
     <!--
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
