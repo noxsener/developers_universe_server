@@ -22,8 +22,6 @@
             <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
 
-
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -31,26 +29,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.liquibase</groupId>
-            <artifactId>liquibase-core</artifactId>
-            <version>4.17.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.microsoft.sqlserver</groupId>
-            <artifactId>mssql-jdbc</artifactId>
-            <scope>runtime</scope>
-        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>
@@ -73,26 +51,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.liquibase</groupId>
-                <artifactId>liquibase-maven-plugin</artifactId>
-                <version>4.17.0</version>
-                <configuration>
-                    <propertyFile>src/main/resources/db/liquibase.properties</propertyFile>
-<!--                    <changeLogFile>src/main/resources/liquibase-changeLog.xml</changeLogFile>-->
-<!--                    <url>jdbc:sqlserver://127.0.0.1:1433;databaseName=DevelopersUniverse;encrypt=true;trustServerCertificate=true</url>-->
-<!--                    <username>sa</username>-->
-<!--                    <password>P1geonFlyP10!</password>-->
-<!--                    <driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver>-->
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>com.microsoft.sqlserver</groupId>
-                        <artifactId>mssql-jdbc</artifactId>
-                        <version>10.2.1.jre8</version>
-                    </dependency>
-                </dependencies>
             </plugin>
         </plugins>
     </build>

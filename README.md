@@ -96,7 +96,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 * Git [from here](https://git-scm.com/downloads)
-* **[OpenJDK 19 LTS](https://jdk.java.net/19/)** or **[Oracle JDK 19 LTS](https://www.oracle.com/java/technologies/javase/jdk19-archive-downloads.html)**
+* **[OpenJDK 17 LTS](https://jdk.java.net/17/)** or **[Oracle JDK 17 LTS](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)**
 * Recenty Updated **[IntelliJ](https://www.jetbrains.com/idea/download)** or **[Visual Studio Code](https://code.visualstudio.com/download)** with SonarLint plugins.
 
 ### Installation
