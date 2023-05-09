@@ -78,6 +78,7 @@
     </dependencies>
 
     <build>
+        <finalName>media</finalName>
         <plugins>
             <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>

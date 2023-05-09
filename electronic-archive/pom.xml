@@ -67,6 +67,7 @@
     </dependencies>
 
     <build>
+        <finalName>electronic-archive</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
