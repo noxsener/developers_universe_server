@@ -9,13 +9,12 @@ import com.codenfast.developersuniverse.service.EncryptService;
 import com.codenfast.developersuniverse.user.controller.UserController;
 import com.codenfast.developersuniverse.utils.StringConstant;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
-
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
 
 @RequestMapping(path = "/api/user")
 @RestController

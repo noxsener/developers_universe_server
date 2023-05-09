@@ -1,19 +1,17 @@
 package com.codenfast.developersuniverse.user.service;
 
-import com.codenfast.developersuniverse.common.entity.user.*;
+import com.codenfast.developersuniverse.common.entity.user.Role;
 import com.codenfast.developersuniverse.common.service.BaseServiceImpl;
-import com.codenfast.developersuniverse.model.*;
-import com.codenfast.developersuniverse.user.repository.*;
+import com.codenfast.developersuniverse.model.CodenfastException;
+import com.codenfast.developersuniverse.model.FilterParam;
+import com.codenfast.developersuniverse.model.RequestGrid;
+import com.codenfast.developersuniverse.model.TableModel;
+import com.codenfast.developersuniverse.user.repository.RoleRepository;
 import com.codenfast.developersuniverse.utils.StringConstant;
 import lombok.RequiredArgsConstructor;
-import org.apache.commons.lang3.ObjectUtils;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.util.CollectionUtils;
 
-import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 import java.util.stream.Collectors;
 

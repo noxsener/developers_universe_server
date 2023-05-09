@@ -7,11 +7,10 @@ import com.codenfast.developersuniverse.model.RequestGrid;
 import com.codenfast.developersuniverse.service.EncryptService;
 import com.codenfast.developersuniverse.utils.StringConstant;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
-
-import jakarta.servlet.http.HttpServletResponse;
 
 @RequestMapping(path = "api/media-genre", consumes = MediaType.TEXT_PLAIN_VALUE, produces = MediaType.TEXT_PLAIN_VALUE)
 @RestController

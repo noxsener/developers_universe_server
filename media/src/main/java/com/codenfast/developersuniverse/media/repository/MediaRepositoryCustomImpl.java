@@ -2,7 +2,6 @@ package com.codenfast.developersuniverse.media.repository;
 
 import com.codenfast.developersuniverse.common.entity.media.Media;
 import com.codenfast.developersuniverse.common.repository.BaseRepositoryImpl;
-
 import jakarta.persistence.EntityManager;
 
 

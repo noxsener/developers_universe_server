@@ -1,6 +1,5 @@
 package com.codenfast.developersuniverse.browserbot.service;
 
-import com.codenfast.developersuniverse.entitydto.media.MediaDownloadSourceDto;
 import com.codenfast.developersuniverse.model.OpenGraph;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;

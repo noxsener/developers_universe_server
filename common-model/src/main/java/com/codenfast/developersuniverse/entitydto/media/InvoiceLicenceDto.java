@@ -4,7 +4,6 @@ import com.codenfast.developersuniverse.EntityModel;
 import com.codenfast.developersuniverse.entitydto.download.DownloadIntentDto;
 import com.codenfast.developersuniverse.entitydto.download.DownloadPartDto;
 import com.codenfast.developersuniverse.entitydto.download.DownloadStatusDto;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.time.LocalDateTime;
 import java.util.List;
