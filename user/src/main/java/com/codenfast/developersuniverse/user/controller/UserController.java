@@ -11,6 +11,7 @@ import com.codenfast.developersuniverse.model.RequestGrid;
 import com.codenfast.developersuniverse.model.TableModel;
 import com.codenfast.developersuniverse.user.security.TokenService;
 import com.codenfast.developersuniverse.user.service.UserService;
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +19,6 @@ import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
-import jakarta.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @RequestMapping(path = "user")

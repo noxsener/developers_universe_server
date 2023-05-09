@@ -1,15 +1,11 @@
 package com.codenfast.developersuniverse.feignclients;
 
 import com.codenfast.developersuniverse.entitydto.OfflineDbInfoDto;
-import com.codenfast.developersuniverse.model.CodenfastException;
 import com.codenfast.developersuniverse.model.RequestGrid;
 import com.codenfast.developersuniverse.model.TableModel;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
