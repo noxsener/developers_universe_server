@@ -187,12 +187,9 @@ public class MediaServiceImpl extends BaseServiceImpl<Media> implements MediaSer
                 String mediaGenreJson = Base64.getEncoder().encodeToString(objectMapper.writeValueAsString(mediaGenreDtoList).getBytes(StandardCharsets.UTF_8));
                 FileUtils.write(new File(mediaFolder,genre.getName().replaceAll("[\\\\/]","-")+".json"), mediaGenreJson, StandardCharsets.UTF_8);
             }
-        } catch (CodenfastException e) {
-            throw new RuntimeException(e);
-        } catch (JsonProcessingException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+        } catch (CodenfastException | IOException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e.getMessage(), e);
         }
     }
 
